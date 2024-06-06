@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title of the webpage -->
+    <title>Exchange Rate</title>
+    <!-- Link to Font Awesome CSS for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container div -->
+    <div id="container">
+      <!-- Main content div -->
+      <div id="main">
+        <!-- Header section -->
+        <div class="header-wrapper">
+          <!-- Title of the application -->
+          <h4>Exchange Rate</h4>
+        </div>
+        <!-- Content section -->
+        <div class="content-wrapper">
+          <!-- Input for the amount to be converted -->
+          <input id="amount" type="number" placeholder="Miktar" />
+          <!-- Dropdown for selecting the first currency -->
+          <select id="firstCurrencyOption">
+            <option value="USD" selected>USD</option>
+            <option value="EUR">EUR</option>
+            <option value="TRY">TRY</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="RUB">RUB</option>
+            <option value="CNY">CNY</option>
+            <option value="INR">INR</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+          </select>
+          <!-- Arrow icon between currency dropdowns -->
+          <i class="fa-solid fa-arrow-right"></i>
+          <!-- Dropdown for selecting the second currency -->
+          <select id="secondCurrencyOption">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="TRY" selected>TRY</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="RUB">RUB</option>
+            <option value="CNY">CNY</option>
+            <option value="INR">INR</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+          </select>
+          <!-- Input for displaying the result, readonly to prevent user input -->
+          <input id="result" type="number" placeholder="Sonuç" readonly />
+        </div>
+      </div>
+    </div>
+    <!-- Link to the external JavaScript file for currency conversion logic -->
+    <script src="currency.js"></script>
+    <!-- Link to the external JavaScript file for main application logic -->
+    <script src="main.js"></script>
+  </body>
+</html>

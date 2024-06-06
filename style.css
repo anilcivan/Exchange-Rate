@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 20px;
+    border: 2px solid #00acc1;
+  }
+  
+  #main {
+    text-align: center;
+  }
+  
+  .header-wrapper h4 {
+    margin: 0;
+    padding: 10px 0;
+    color: #006064;
+    font-size: 24px;
+    border-bottom: 2px solid #00acc1;
+  }
+  .input-wrapper {
+    margin-top: 20px;
+    
+  }
+  
+  .content-wrapper {
+    margin-top: 20px;
+  }
+  
+  .content-wrapper input,
+  .content-wrapper select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #00acc1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .content-wrapper select {
+    width: calc(45% - 10px);
+  }
+
+  .content-wrapper input#amount {
+    width: calc(100% - 24px);
+    background-color: #f1f1f1;
+  }
+  
+  .content-wrapper input#result {
+    width: calc(100% - 24px);
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+  }
+  
+  .content-wrapper .select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content-wrapper .select-container i {
+    color: #00acc1;
+    font-size: 24px;
+  }
+  
+  
+  
